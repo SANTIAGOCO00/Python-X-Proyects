@@ -1,0 +1,10 @@
+SHOW DATABASES;
+USE pythonx;
+CREATE TABLE user(userId INT PRIMARY KEY, username VARCHAR(10), email VARCHAR(25), userType VARCHAR(10));
+SHOW TABLES;
+SELECT * FROM user;
+INSERT INTO user VALUES(1526, 'John', 'john@example.com', 'PRO');
+INSERT INTO user VALUES(6745, 'Smith', 'smith@example.com', 'REGULAR');
+SELECT * FROM user;
+SELECT userId, userType FROM user;
+SELECT * FROM user WHERE userType = 'PRO';
